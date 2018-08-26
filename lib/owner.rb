@@ -38,6 +38,13 @@ class Owner
     dog = Dog.new(name)
     self.pets[:dogs] << dog
   end
+  
+  def walk_dogs(mood)
+  mood = Dog.new(mood)
+  if @name == mood
+    self.pets[:dogs] << mood
+  end
+end
 end
 
 
