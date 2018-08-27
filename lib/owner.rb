@@ -59,9 +59,14 @@ class Owner
  end
  
   def sell_pets
-    self.pets.each do |pets|
-      pets.mood = "nervous" 
+    self.pets.each do |pet|
+      pet.mood = "nervous" 
     end
+ end
+ 
+   def list_pets
+    self. 
+    puts "I have #{pets[:fishes].length} fish, #{pets[:dogs].length} dog(s), and #{pets[:cats].length} cat(s)."
  end
 end
 
