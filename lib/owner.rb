@@ -59,14 +59,16 @@ class Owner
  end
  
   def sell_pets
-    self.pets.each do |pet|
-      pet.mood = "nervous" 
+    # binding.pry
+    self.pets.each do |owner, pet|
+      pet.mood = "nervous"
     end
  end
  
-   def list_pets
-    self. 
-    puts "I have #{pets[:fishes].length} fish, #{pets[:dogs].length} dog(s), and #{pets[:cats].length} cat(s)."
+  def list_pets
+    self.pets.each do |owner, pet|
+    puts "I have #{owner.length} fish, #{owner.length} dog(s), and #{owner.length} cat(s)."
+  end
  end
 end
 
