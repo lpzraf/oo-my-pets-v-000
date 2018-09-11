@@ -61,7 +61,12 @@ class Owner
   def sell_pets
     self.pets.each do |type_of_pet, values|
       values.each do |pet|
+<<<<<<< HEAD
+=======
+          binding.pry
+>>>>>>> d9c5a5319fa37bbaa6f744a5466cc1761c8e1cc1
         pet.mood = "nervous"
+         pet.clear
       end
       values.clear
     end
